@@ -33,4 +33,7 @@ output "azurerm_lb_outbound_rule_id" {
   description = "The id for outbound rule for azure lb"
 }
 
-
+output "azurerm_backend_address_pool_id" {
+  value       = azurerm_lb_backend_address_pool.azurelb.id
+  description = "The id for backend address pool for azure lb"
+}
