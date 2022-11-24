@@ -3,6 +3,11 @@ output "azurerm_public_ip_id" {
   description = "The id for azure public ip for this lb"
 }
 
+output "azurerm_public_ip" {
+  value       = azurerm_public_ip.azurelb.*.ip_address
+  description = "The id for azure public ip for this lb"
+}
+
 output "azurerm_lb_id" {
   value       = azurerm_lb.azurelb.id
   description = "The id for azure lb"
