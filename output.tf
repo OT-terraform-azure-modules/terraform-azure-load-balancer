@@ -37,3 +37,9 @@ output "azurerm_backend_address_pool_id" {
   value       = azurerm_lb_backend_address_pool.azurelb.id
   description = "The id for backend address pool for azure lb"
 }
+
+output "azurerm_lb_ip" {
+  value       = azurerm_lb.azurelb.private_ip_address
+  description = "The private ip for azure lb"
+}
+
