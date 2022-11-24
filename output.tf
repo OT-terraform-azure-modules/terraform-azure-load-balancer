@@ -4,7 +4,7 @@ output "azurerm_public_ip_id" {
 }
 
 output "azurerm_public_ip" {
-  value       = azurerm_public_ip.azurelb.*.ip_address
+  value       = azurerm_public_ip.azurelb.*.ip
   description = "The id for azure public ip for this lb"
 }
 
